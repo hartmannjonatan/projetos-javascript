@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos com JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/7aebf30b56.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style-jogodavelha.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/7aebf30b56.js" crossorigin="anonymous"></script>
+    <script src="./scripts/jogodavelha.js"></script>
+    
+  </head>
+<body class="bg-secondary-subtle">
+    <nav class="navbar navbar-dark navbar-dark px-5 navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Início</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./projetosbasicos.html">Projetos básicos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="h2 mx-md-5 mx-3 mt-5">Jogo da Velha</div>
+    <div class="jogovelha container mt-5 w-25 text-center">
+        <div class="row row-cols-3">
+            <div class="col slot" id="l1c1"></div>
+            <div class="col slot" id="l1c2"></div>
+            <div class="col slot" id="l1c3"></div>
+            <div class="col slot" id="l2c1"></div>
+            <div class="col slot" id="l2c2"></div>
+            <div class="col slot" id="l2c3"></div>
+            <div class="col slot" id="l3c1"></div>
+            <div class="col slot" id="l3c2"></div>
+            <div class="col slot" id="l3c3"></div>
+        </div>
+    </div>
+    <div id="alerts"></div>
+    <button id="startConfetti" style="display: none;">Start</button>    
+    <canvas id="confettiCanvas" style="position:absolute;top:0;left:0;display:none;z-index:99;"></canvas>
+
+    <script src="./scripts/jquery.confetti.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
