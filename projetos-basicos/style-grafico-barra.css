@@ -1,0 +1,12 @@
+canvas{
+    border: solid 1px black;
+    width: 900px;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    canvas{
+        width: 768px;
+        height: 150px;
+    }
+}
